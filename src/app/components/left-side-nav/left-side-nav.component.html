@@ -1,0 +1,23 @@
+<nav class="left-side-nav-container dark-background">
+  <ul class="nav-item-list">
+    <li class="nav-item" *ngFor="let link of topLinks" [routerLink]="[link.link]">
+      <a class="link-item">{{ link.name }}</a>
+    </li>
+  </ul>
+
+  <h1 class="header">YOUR LIBRARY</h1>
+
+  <ul class="nav-item-list">
+    <li class="nav-item" *ngFor="let link of yourLibraryLinks" [routerLink]="[link.link]">
+      <a class="link-item">{{ link.name }}</a>
+    </li>
+  </ul>
+
+  <h1 class="header">YOUR PLAYLISTS</h1>
+
+  <ul class="nav-item-list">
+    <li class="nav-item" *ngFor="let link of yourPlaylistLinks" [routerLink]="[link.link]">
+      <a class="link-item">{{ link.name }}</a>
+    </li>
+  </ul>
+</nav>
